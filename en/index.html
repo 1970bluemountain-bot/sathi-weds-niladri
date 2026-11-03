@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sathi weds Niladri</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Shubho Bibaho: Sathi Mahata weds Niladri Mahato, Sunday 13 December 2026, Jhargram">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Pinyon+Script&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<meta name="theme-color" content="#a3121a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sathi weds Niladri">
+<meta property="og:description" content="Shubho Bibaho: Sathi Mahata weds Niladri Mahato, Sunday 13 December 2026, Jhargram">
+<link rel="icon" type="image/svg+xml" href="../assets/images/marigold.svg">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="stage" id="stage" hidden>
+  <div class="stage-alp" data-ill="alpStage" aria-hidden="true"><img src="../assets/images/alpona.svg" alt="" decoding="async"></div>
+  <div class="paar stage-paar-t" aria-hidden="true"></div>
+  <div class="paar flip stage-paar-b" aria-hidden="true"></div>
+  <div class="stage-inner">
+    <div class="panel quiz" id="p-quiz">
+      <div class="corner c-tl" data-ill="corner" aria-hidden="true"><img src="../assets/images/corner.svg" alt="" decoding="async"></div>
+      <div class="corner c-br" data-ill="corner" aria-hidden="true"><img src="../assets/images/corner.svg" alt="" decoding="async"></div>
+      <div class="qz-intro" id="qz-intro">
+        <p class="qz-hey">Hey, you!</p>
+        <h2 class="qz-title">Sathi &amp; Niladri are getting married!</h2>
+        <p class="qz-sub">Seven very important questions before your invitation.</p>
+        <button class="pill qz-start" id="qz-start" type="button">Let's begin</button>
+      </div>
+      <div class="qz-card" id="qz-card" hidden>
+        <div class="qz-top"><span id="qz-count"></span><div class="qz-bar"><i id="qz-bar"></i></div></div>
+        <h2 class="qz-q" id="qz-q"></h2>
+        <div class="qz-opts" id="qz-opts" role="group" aria-labelledby="qz-q"></div>
+        <p class="qz-react" id="qz-react" aria-live="polite"></p>
+      </div>
+      <div class="qz-verdict" id="qz-verdict" hidden>
+        <div class="qz-emoji" id="qz-emoji" aria-hidden="true"></div>
+        <span class="qz-stamp" id="qz-stamp"></span>
+        <h2 class="qz-vt" id="qz-vt"></h2>
+        <p class="qz-vp" id="qz-vp"></p>
+        <button class="pill" id="qz-go" type="button">Open my invitation</button>
+        <p class="qz-committee">Reviewed by the highly unofficial Wedding Admission Committee</p>
+      </div>
+    </div>
+    <div class="panel envp" id="p-env" hidden>
+    <p class="stage-for">An invitation for you</p>
+    <button class="env" id="env" type="button" aria-label="Open the wedding invitation">
+      <span class="env-back"></span>
+      <span class="env-card"><span class="ec-orn" data-ill="orn"><img src="../assets/images/ornament.svg" alt="" decoding="async"></span><span class="ec-title">Shubho Bibaho</span><span class="ec-names">Sathi &amp; Niladri</span><span class="ec-date">13 · 12 · 2026</span></span>
+      <span class="env-front" data-ill="envFront"><img src="../assets/images/envelope-front.svg" alt="" decoding="async"></span>
+      <span class="env-flap" data-ill="envFlap"><img src="../assets/images/envelope-flap.svg" alt="" decoding="async"></span>
+      <span class="env-seal"><b>SN</b></span>
+    </button>
+    <p class="stage-hint">Tap the seal to open</p>
+    <a class="stage-lang" href="../bn/index.html">Read in বাংলা</a>
+      <button class="qz-retake" id="qz-retake" type="button">Take the quiz again</button>
+    </div>
+  </div>
+</div>
+<script>
+try{if(!/(^|[?&#])opened\b/.test(location.hash)){document.getElementById('stage').hidden=false;document.documentElement.classList.add('locked');}}catch(e){}
+</script>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<header class="hero" id="top">
+  <div class="toran" id="toran" aria-hidden="true"></div>
+  <div class="alpona" data-depth=".09" data-ill="alpHero" aria-hidden="true"><img src="../assets/images/alpona.svg" alt="" decoding="async"></div>
+  <div class="crown topor" data-depth=".05" aria-hidden="true"><div><div data-ill="topor"><img src="../assets/images/topor.svg" alt="" decoding="async"></div><span class="crown-cap">his topor</span></div></div>
+  <div class="crown mukut" data-depth=".05" aria-hidden="true"><div><div data-ill="mukut"><img src="../assets/images/mukut.svg" alt="" decoding="async"></div><span class="crown-cap">her mukut</span></div></div>
+  <div class="wrap">
+    <div class="hero-card" id="hero-card">
+      <article class="invite-card">
+        <div class="corner c-tl" data-ill="corner" aria-hidden="true"><img src="../assets/images/corner.svg" alt="" decoding="async"></div>
+        <div class="corner c-tr" data-ill="corner" aria-hidden="true"><img src="../assets/images/corner.svg" alt="" decoding="async"></div>
+        <div class="corner c-bl" data-ill="corner" aria-hidden="true"><img src="../assets/images/corner.svg" alt="" decoding="async"></div>
+        <div class="corner c-br" data-ill="corner" aria-hidden="true"><img src="../assets/images/corner.svg" alt="" decoding="async"></div>
+        <p class="ic-pranam">॥ Sri Sri Prajapataye Namah ॥</p>
+        <div class="orn" data-ill="orn" aria-hidden="true"><img src="../assets/images/ornament.svg" alt="" decoding="async"></div>
+        <h1 class="ic-title">Shubho Bibaho</h1>
+        <p class="ic-lead">With the blessings of the Almighty and our elders,</p>
+        <p class="ic-parents">Niranjan Mahata &amp; Kalyani Mahata</p>
+        <p class="ic-ask">request the honour of your presence at the marriage of their only daughter</p>
+        <p class="cname">Sathi</p>
+        <p class="ic-with">with</p>
+        <p class="cname">Niladri</p>
+        <p class="ic-small">elder son of Shri Manoranjan Mahato &amp; Smt. Gita Rani Mahato</p>
+        <div class="ic-rule" aria-hidden="true"></div>
+        <p class="ic-when">Sunday, 13 December 2026</p>
+        <p class="ic-time">10 PM onwards</p>
+        <p class="ic-where">New White House, Jhargram</p>
+      </article>
+      <div class="doors" id="doors" aria-hidden="true">
+        <div class="door l"><div class="dalp" data-ill="alpDoor"><img src="../assets/images/alpona-door.svg" alt="" decoding="async"></div></div>
+        <div class="door r"><div class="dalp" data-ill="alpDoor"><img src="../assets/images/alpona-door.svg" alt="" decoding="async"></div></div>
+        <div class="medal"><b>SN</b></div>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <a class="scroll-cue" href="#count"><span aria-hidden="true"></span>See the celebrations</a>
+      <a class="lang-link" href="../bn/index.html">Read in বাংলা</a>
+    </div>
+  </div>
+</header>
+
+<div class="paar" aria-hidden="true"></div>
+<section class="band band-alt count" id="count" aria-labelledby="cd-h">
+  <div class="med l" data-speed=".2" style="--top:14%" aria-hidden="true"><div data-ill="haldi"><img src="../assets/images/haldi.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="med r" data-speed="-.18" style="--top:34%" aria-hidden="true"><div style="animation-delay:-3s" data-ill="shankhaPola"><img src="../assets/images/shankha-pola.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" data-ill="orn" aria-hidden="true"><img src="../assets/images/ornament.svg" alt="" decoding="async"></div>
+      <p class="eyebrow">Counting down</p>
+      <h2 id="cd-h">To the Auspicious Hour</h2>
+      <p>Until the shehnai plays and the conch is blown.</p>
+    </div>
+    <div class="cd" role="timer" aria-live="off">
+      <div class="cd-tile"><b id="cd-d">–</b><span>Days</span></div>
+      <div class="cd-tile"><b id="cd-h2">–</b><span>Hours</span></div>
+      <div class="cd-tile"><b id="cd-m">–</b><span>Minutes</span></div>
+      <div class="cd-tile"><b id="cd-s">–</b><span>Seconds</span></div>
+    </div>
+    <p class="cd-note" id="cd-note">Sunday, 13 December 2026 · 10:00 PM IST</p>
+  </div>
+</section>
+<div class="paar flip" aria-hidden="true"></div>
+
+<section class="band" id="events">
+  <div class="bgimg bl" data-speed=".15" aria-hidden="true" data-ill="shankhaPola"><img src="../assets/images/shankha-pola.svg" alt="" loading="lazy" decoding="async"></div>
+  <div class="bgimg tr" data-speed="-.1" aria-hidden="true" data-ill="malaBadal"><img src="../assets/images/mala-badal.svg" alt="" loading="lazy" decoding="async"></div>
+  <div class="fl" data-speed=".3" style="left:2%;top:26%;width:52px"><div data-ill="salFl"><img src="../assets/images/sal-leaf.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="fl" data-speed="-.25" style="right:2%;top:58%;width:56px"><div style="animation-delay:-3s" data-ill="marigoldFl"><img src="../assets/images/marigold.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" data-ill="orn" aria-hidden="true"><img src="../assets/images/ornament.svg" alt="" decoding="async"></div>
+      <p class="eyebrow">Order of ceremonies</p>
+      <h2>The Celebrations</h2>
+      <p>Four ceremonies over three days, from mehendi to sindoor.</p>
+    </div>
+    <div class="tl-wrap" id="tl">
+      <div class="tl-track" aria-hidden="true"><div class="tl-fill" id="tl-fill"></div></div>
+      <ol class="tl">
+        <li class="ev rv">
+          <span class="node" aria-hidden="true"></span>
+          <div class="ev-art" data-ill="mehendi" aria-hidden="true"><img src="../assets/images/mehendi-en.svg" alt="" loading="lazy" decoding="async"></div>
+          <div class="ev-body">
+            <p class="eyebrow">Henna ceremony</p>
+            <h3>Mehendi</h3>
+            <p class="ev-when">Thursday, 10 December 2026</p>
+            <p class="ev-where">Bride's home · Balaramdihi, Jhargram</p>
+            <a class="pill ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Balaramdihi+Jhargram+West+Bengal+721507">Open in Maps</a>
+          </div>
+        </li>
+        <li class="ev rv">
+          <span class="node" aria-hidden="true"></span>
+          <div class="ev-art" data-ill="aiburobhat" aria-hidden="true"><img src="../assets/images/aiburobhat.svg" alt="" loading="lazy" decoding="async"></div>
+          <div class="ev-body">
+            <p class="eyebrow">The maiden's feast</p>
+            <h3>Aiburobhat</h3>
+            <p class="ev-when">Saturday, 12 December 2026</p>
+            <p class="ev-where">Bride's home · Balaramdihi, Jhargram</p>
+            <a class="pill ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Balaramdihi+Jhargram+West+Bengal+721507">Open in Maps</a>
+          </div>
+        </li>
+        <li class="ev rv">
+          <span class="node" aria-hidden="true"></span>
+          <div class="ev-art" data-ill="haldi" aria-hidden="true"><img src="../assets/images/haldi.svg" alt="" loading="lazy" decoding="async"></div>
+          <div class="ev-body">
+            <p class="eyebrow">Turmeric ceremony</p>
+            <h3>Gaye Holud</h3>
+            <p class="ev-when">Sunday, 13 December 2026 · 12 noon</p>
+            <p class="ev-where">Bride's home · Balaramdihi, Jhargram</p>
+            <a class="pill ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Balaramdihi+Jhargram+West+Bengal+721507">Open in Maps</a>
+          </div>
+        </li>
+        <li class="ev rv">
+          <span class="node" aria-hidden="true"></span>
+          <div class="ev-art" data-ill="bibaho" aria-hidden="true"><img src="../assets/images/bibaho.svg" alt="" loading="lazy" decoding="async"></div>
+          <div class="ev-body">
+            <p class="eyebrow">The wedding</p>
+            <h3>Shubho Bibaho</h3>
+            <p class="ev-when">Sunday, 13 December 2026 · 10 PM onwards</p>
+            <p class="ev-where">New White House, Jhargram</p>
+            <a class="pill" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=New+White+House+Jhargram+West+Bengal+721507">Open in Maps</a>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="families">
+  <div class="med l" data-speed=".22" style="--top:8%" aria-hidden="true"><div data-ill="shubhoDrishti"><img src="../assets/images/shubho-drishti.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="med r" data-speed="-.22" style="--top:12%" aria-hidden="true"><div style="animation-delay:-2s" data-ill="saptapadi"><img src="../assets/images/saptapadi.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="bgimg br" data-speed=".12" aria-hidden="true" data-ill="shubhoDrishti"><img src="../assets/images/shubho-drishti.svg" alt="" loading="lazy" decoding="async"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" data-ill="orn" aria-hidden="true"><img src="../assets/images/ornament.svg" alt="" decoding="async"></div>
+      <p class="eyebrow">Two families, one bond</p>
+      <h2>Our Families</h2>
+      <p>With the blessings of those who brought them up.</p>
+    </div>
+    <div class="fam-grid">
+      <div class="arch rv">
+        <div class="arch-top" data-ill="marigoldFl" aria-hidden="true"><img src="../assets/images/marigold.svg" alt="" loading="lazy" decoding="async"></div>
+        <p class="eyebrow">Kanya Paksha</p>
+        <h3>The bride's family</h3>
+        <ul><li><b>Niranjan Mahata</b><span>Father</span></li><li><b>Kalyani Mahata</b><span>Mother</span></li><li><b>Abhijit Mahata</b><span>Elder brother</span></li></ul>
+      </div>
+      <div class="couple rv">
+        <div class="art sd-art" id="sd-art" data-ill="sindoor" role="img" aria-label="Illustration of the groom placing sindoor in the parting of the bride's hair"><img src="../assets/images/sindoor-daan.svg" alt="" loading="lazy" decoding="async"></div>
+      </div>
+      <div class="arch rv">
+        <div class="arch-top" data-ill="marigoldFl" aria-hidden="true"><img src="../assets/images/marigold.svg" alt="" loading="lazy" decoding="async"></div>
+        <p class="eyebrow">Bor Paksha</p>
+        <h3>The groom's family</h3>
+        <ul><li><b>Manoranjan Mahato</b><span>Father</span></li><li><b>Gita Rani Mahato</b><span>Mother</span></li><li><b>Mrinal Kanti Mahato</b><span>Younger brother</span></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="paar" aria-hidden="true"></div>
+<section class="band band-alt" id="venues">
+  <div class="med l" data-speed=".2" style="--top:10%" aria-hidden="true"><div data-ill="bibaho"><img src="../assets/images/bibaho.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="med r" data-speed="-.24" style="--top:16%" aria-hidden="true"><div style="animation-delay:-4s" data-ill="mehendi"><img src="../assets/images/mehendi-en.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="bgimg bl" data-speed=".12" aria-hidden="true" data-ill="saptapadi"><img src="../assets/images/saptapadi.svg" alt="" loading="lazy" decoding="async"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" data-ill="orn" aria-hidden="true"><img src="../assets/images/ornament.svg" alt="" decoding="async"></div>
+      <p class="eyebrow">Venues</p>
+      <h2>Where to Find Us</h2>
+      <p>Both venues are in Jhargram, a short drive apart.</p>
+    </div>
+    <div class="venues">
+      <article class="vcard rv">
+        <div class="vstamp" aria-hidden="true"><b>10–13</b><span>Dec</span></div>
+        <p class="eyebrow">Bride's home</p>
+        <h3>Balaramdihi</h3>
+        <p class="addr" id="addr1">Balaramdihi, Jhargram, West Bengal 721507</p>
+        <div class="chips"><span>Mehendi</span><span>Aiburobhat</span><span>Gaye Holud</span></div>
+        <div class="btns"><a class="pill" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Balaramdihi+Jhargram+West+Bengal+721507">Open in Maps</a><button class="pill ghost" type="button" data-copy="addr1">Copy address</button></div>
+      </article>
+      <article class="vcard rv">
+        <div class="vstamp" aria-hidden="true"><b>13</b><span>Dec · 10 PM</span></div>
+        <p class="eyebrow">Wedding venue</p>
+        <h3>New White House</h3>
+        <p class="addr" id="addr2">New White House, Jhargram, West Bengal 721507</p>
+        <div class="chips"><span>Shubho Bibaho</span><span>Sindoor Daan</span></div>
+        <div class="btns"><a class="pill" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=New+White+House+Jhargram+West+Bengal+721507">Open in Maps</a><button class="pill ghost" type="button" data-copy="addr2">Copy address</button><a class="pill ghost" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Sathi%20%26%20Niladri%20%C2%B7%20Shubho%20Bibaho&amp;dates=20261213T163000Z/20261213T203000Z&amp;details=Wedding%20of%20Sathi%20Mahata%20and%20Niladri%20Mahato&amp;location=New%20White%20House%2C%20Jhargram%2C%20West%20Bengal%20721507">Add to calendar</a></div>
+      </article>
+    </div>
+    <p class="vnote">Jhargram sits among the sal forests of Jangalmahal, and December nights turn cold. Do bring a shawl for the wedding night.</p>
+  </div>
+</section>
+<div class="paar flip" aria-hidden="true"></div>
+
+<footer class="band finale">
+  <div class="med l" data-speed=".2" style="--top:22%" aria-hidden="true"><div data-ill="malaBadal"><img src="../assets/images/mala-badal.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="med r" data-speed="-.2" style="--top:30%" aria-hidden="true"><div style="animation-delay:-2s" data-ill="aiburobhat"><img src="../assets/images/aiburobhat.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="bgimg c" data-speed=".1" aria-hidden="true" data-ill="bibaho"><img src="../assets/images/bibaho.svg" alt="" loading="lazy" decoding="async"></div>
+  <div class="wrap">
+    <div class="orn" data-ill="orn" aria-hidden="true"><img src="../assets/images/ornament.svg" alt="" decoding="async"></div>
+    <p class="big rv">Your presence is our blessing</p>
+    <p class="sub rv">We look forward to welcoming you and your family to our daughter's wedding.</p>
+    <p class="from">With love,<b>Niranjan Mahata &amp; Kalyani Mahata</b></p>
+    <div class="mono" aria-hidden="true"><b>SN</b></div>
+    <p class="tiny">13 · 12 · 2026 · Jhargram</p>
+    <a class="lang-link" href="../bn/index.html">Read in বাংলা</a>
+  </div>
+</footer>
+
+<button class="shankha-btn" type="button" id="shankha" aria-label="Play the conch and ulu sound">
+  <span class="ic" data-ill="conchFl" aria-hidden="true"><img src="../assets/images/conch.svg" alt="" decoding="async"></span>
+  <span class="lbl">Blow the shankha</span>
+</button>
+
+<script src="../assets/js/lang-en.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

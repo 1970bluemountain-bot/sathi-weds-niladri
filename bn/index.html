@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>সাথী ও নীলাদ্রির শুভ বিবাহ</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="শুভ বিবাহ: সাথী মাহাতা ও নীলাদ্রি মাহাতো, রবিবার ১৩ ডিসেম্বর ২০২৬, ঝাড়গ্রাম">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Galada&family=Tiro+Bangla&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap">
+<meta name="theme-color" content="#a3121a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="সাথী ও নীলাদ্রির শুভ বিবাহ">
+<meta property="og:description" content="শুভ বিবাহ: সাথী মাহাতা ও নীলাদ্রি মাহাতো, রবিবার ১৩ ডিসেম্বর ২০২৬, ঝাড়গ্রাম">
+<link rel="icon" type="image/svg+xml" href="../assets/images/marigold.svg">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="stage" id="stage" hidden>
+  <div class="stage-alp" data-ill="alpStage" aria-hidden="true"><img src="../assets/images/alpona.svg" alt="" decoding="async"></div>
+  <div class="paar stage-paar-t" aria-hidden="true"></div>
+  <div class="paar flip stage-paar-b" aria-hidden="true"></div>
+  <div class="stage-inner">
+    <div class="panel quiz" id="p-quiz">
+      <div class="corner c-tl" data-ill="corner" aria-hidden="true"><img src="../assets/images/corner.svg" alt="" decoding="async"></div>
+      <div class="corner c-br" data-ill="corner" aria-hidden="true"><img src="../assets/images/corner.svg" alt="" decoding="async"></div>
+      <div class="qz-intro" id="qz-intro">
+        <p class="qz-hey">এই যে, আপনি!</p>
+        <h2 class="qz-title">সাথী আর নীলাদ্রির বিয়ে!</h2>
+        <p class="qz-sub">নিমন্ত্রণপত্র খোলার আগে সাতটা জরুরি প্রশ্ন।</p>
+        <button class="pill qz-start" id="qz-start" type="button">শুরু করি</button>
+      </div>
+      <div class="qz-card" id="qz-card" hidden>
+        <div class="qz-top"><span id="qz-count"></span><div class="qz-bar"><i id="qz-bar"></i></div></div>
+        <h2 class="qz-q" id="qz-q"></h2>
+        <div class="qz-opts" id="qz-opts" role="group" aria-labelledby="qz-q"></div>
+        <p class="qz-react" id="qz-react" aria-live="polite"></p>
+      </div>
+      <div class="qz-verdict" id="qz-verdict" hidden>
+        <div class="qz-emoji" id="qz-emoji" aria-hidden="true"></div>
+        <span class="qz-stamp" id="qz-stamp"></span>
+        <h2 class="qz-vt" id="qz-vt"></h2>
+        <p class="qz-vp" id="qz-vp"></p>
+        <button class="pill" id="qz-go" type="button">নিমন্ত্রণপত্র খুলুন</button>
+        <p class="qz-committee">যাচাই করেছে একেবারে বেসরকারি বিয়ে-ভর্তি কমিটি</p>
+      </div>
+    </div>
+    <div class="panel envp" id="p-env" hidden>
+    <p class="stage-for">আপনার জন্য নিমন্ত্রণপত্র</p>
+    <button class="env" id="env" type="button" aria-label="বিবাহের নিমন্ত্রণপত্র খুলুন">
+      <span class="env-back"></span>
+      <span class="env-card"><span class="ec-orn" data-ill="orn"><img src="../assets/images/ornament.svg" alt="" decoding="async"></span><span class="ec-title">শুভ বিবাহ</span><span class="ec-names">সাথী ও নীলাদ্রি</span><span class="ec-date">১৩ · ১২ · ২০২৬</span></span>
+      <span class="env-front" data-ill="envFront"><img src="../assets/images/envelope-front.svg" alt="" decoding="async"></span>
+      <span class="env-flap" data-ill="envFlap"><img src="../assets/images/envelope-flap.svg" alt="" decoding="async"></span>
+      <span class="env-seal"><b>স ন</b></span>
+    </button>
+    <p class="stage-hint">খুলতে সিলমোহরে স্পর্শ করুন</p>
+    <a class="stage-lang" href="../en/index.html">Read in English</a>
+      <button class="qz-retake" id="qz-retake" type="button">আবার কুইজ দিন</button>
+    </div>
+  </div>
+</div>
+<script>
+try{if(!/(^|[?&#])opened\b/.test(location.hash)){document.getElementById('stage').hidden=false;document.documentElement.classList.add('locked');}}catch(e){}
+</script>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<header class="hero" id="top">
+  <div class="toran" id="toran" aria-hidden="true"></div>
+  <div class="alpona" data-depth=".09" data-ill="alpHero" aria-hidden="true"><img src="../assets/images/alpona.svg" alt="" decoding="async"></div>
+  <div class="crown topor" data-depth=".05" aria-hidden="true"><div><div data-ill="topor"><img src="../assets/images/topor.svg" alt="" decoding="async"></div><span class="crown-cap">বরের টোপর</span></div></div>
+  <div class="crown mukut" data-depth=".05" aria-hidden="true"><div><div data-ill="mukut"><img src="../assets/images/mukut.svg" alt="" decoding="async"></div><span class="crown-cap">কনের মুকুট</span></div></div>
+  <div class="wrap">
+    <div class="hero-card" id="hero-card">
+      <article class="invite-card">
+        <div class="corner c-tl" data-ill="corner" aria-hidden="true"><img src="../assets/images/corner.svg" alt="" decoding="async"></div>
+        <div class="corner c-tr" data-ill="corner" aria-hidden="true"><img src="../assets/images/corner.svg" alt="" decoding="async"></div>
+        <div class="corner c-bl" data-ill="corner" aria-hidden="true"><img src="../assets/images/corner.svg" alt="" decoding="async"></div>
+        <div class="corner c-br" data-ill="corner" aria-hidden="true"><img src="../assets/images/corner.svg" alt="" decoding="async"></div>
+        <p class="ic-pranam">॥ শ্রী শ্রী প্রজাপতয়ে নমঃ ॥</p>
+        <div class="orn" data-ill="orn" aria-hidden="true"><img src="../assets/images/ornament.svg" alt="" decoding="async"></div>
+        <h1 class="ic-title">শুভ বিবাহ</h1>
+        <p class="ic-lead">সবিনয় নিবেদন,</p>
+        <p class="ic-ask">আগামী ১৩ ডিসেম্বর ২০২৬, রবিবার, শুভ লগ্নে আমাদের একমাত্র কন্যা</p>
+        <p class="cname">সাথী</p>
+        <p class="ic-with">ও</p>
+        <p class="cname">নীলাদ্রি</p>
+        <p class="ic-small">(শ্রী মনোরঞ্জন মাহাতো ও শ্রীমতী গীতা রাণী মাহাতোর জ্যেষ্ঠ পুত্র)</p>
+        <p class="ic-ask">শুভ পরিণয় সূত্রে আবদ্ধ হইবে। উক্ত শুভ অনুষ্ঠানে আপনার সবান্ধব উপস্থিতি ও আশীর্বাদ একান্ত কাম্য।</p>
+        <div class="ic-rule" aria-hidden="true"></div>
+        <p class="ic-lead" style="margin-top:0!important">বিনীত</p>
+        <p class="ic-parents">নিরঞ্জন মাহাতা ও কল্যাণী মাহাতা</p>
+        <div class="ic-rule" aria-hidden="true"></div>
+        <p class="ic-when">রবিবার, ১৩ ডিসেম্বর ২০২৬</p>
+        <p class="ic-time">রাত ১০টা থেকে</p>
+        <p class="ic-where">নিউ হোয়াইট হাউস, ঝাড়গ্রাম</p>
+      </article>
+      <div class="doors" id="doors" aria-hidden="true">
+        <div class="door l"><div class="dalp" data-ill="alpDoor"><img src="../assets/images/alpona-door.svg" alt="" decoding="async"></div></div>
+        <div class="door r"><div class="dalp" data-ill="alpDoor"><img src="../assets/images/alpona-door.svg" alt="" decoding="async"></div></div>
+        <div class="medal"><b>স ন</b></div>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <a class="scroll-cue" href="#count"><span aria-hidden="true"></span>অনুষ্ঠান সূচি দেখুন</a>
+      <a class="lang-link" href="../en/index.html">Read in English</a>
+    </div>
+  </div>
+</header>
+
+<div class="paar" aria-hidden="true"></div>
+<section class="band band-alt count" id="count" aria-labelledby="cd-h">
+  <div class="med l" data-speed=".2" style="--top:14%" aria-hidden="true"><div data-ill="haldi"><img src="../assets/images/haldi.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="med r" data-speed="-.18" style="--top:34%" aria-hidden="true"><div style="animation-delay:-3s" data-ill="shankhaPola"><img src="../assets/images/shankha-pola.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" data-ill="orn" aria-hidden="true"><img src="../assets/images/ornament.svg" alt="" decoding="async"></div>
+      <p class="eyebrow">শুভ লগ্নের অপেক্ষায়</p>
+      <h2 id="cd-h">আর মাত্র কিছুদিন</h2>
+      <p>সানাইয়ের সুর আর শঙ্খধ্বনির অপেক্ষায়।</p>
+    </div>
+    <div class="cd" role="timer" aria-live="off">
+      <div class="cd-tile"><b id="cd-d">–</b><span>দিন</span></div>
+      <div class="cd-tile"><b id="cd-h2">–</b><span>ঘণ্টা</span></div>
+      <div class="cd-tile"><b id="cd-m">–</b><span>মিনিট</span></div>
+      <div class="cd-tile"><b id="cd-s">–</b><span>সেকেন্ড</span></div>
+    </div>
+    <p class="cd-note" id="cd-note">রবিবার, ১৩ ডিসেম্বর ২০২৬ · রাত ১০টা</p>
+  </div>
+</section>
+<div class="paar flip" aria-hidden="true"></div>
+
+<section class="band" id="events">
+  <div class="bgimg bl" data-speed=".15" aria-hidden="true" data-ill="shankhaPola"><img src="../assets/images/shankha-pola.svg" alt="" loading="lazy" decoding="async"></div>
+  <div class="bgimg tr" data-speed="-.1" aria-hidden="true" data-ill="malaBadal"><img src="../assets/images/mala-badal.svg" alt="" loading="lazy" decoding="async"></div>
+  <div class="fl" data-speed=".3" style="left:2%;top:26%;width:52px"><div data-ill="salFl"><img src="../assets/images/sal-leaf.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="fl" data-speed="-.25" style="right:2%;top:58%;width:56px"><div style="animation-delay:-3s" data-ill="marigoldFl"><img src="../assets/images/marigold.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" data-ill="orn" aria-hidden="true"><img src="../assets/images/ornament.svg" alt="" decoding="async"></div>
+      <p class="eyebrow">তিন দিনের উৎসব</p>
+      <h2>অনুষ্ঠান সূচি</h2>
+      <p>মেহেন্দি থেকে সিঁদুরদান, চারটি শুভ অনুষ্ঠান।</p>
+    </div>
+    <div class="tl-wrap" id="tl">
+      <div class="tl-track" aria-hidden="true"><div class="tl-fill" id="tl-fill"></div></div>
+      <ol class="tl">
+        <li class="ev rv">
+          <span class="node" aria-hidden="true"></span>
+          <div class="ev-art" data-ill="mehendi" aria-hidden="true"><img src="../assets/images/mehendi-bn.svg" alt="" loading="lazy" decoding="async"></div>
+          <div class="ev-body">
+            <p class="eyebrow">হাতে মেহেন্দির সাজ</p>
+            <h3>মেহেন্দি</h3>
+            <p class="ev-when">বৃহস্পতিবার, ১০ ডিসেম্বর ২০২৬</p>
+            <p class="ev-where">কনের বাড়ি · বলরামডিহি, ঝাড়গ্রাম</p>
+            <a class="pill ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Balaramdihi+Jhargram+West+Bengal+721507">ম্যাপে দেখুন</a>
+          </div>
+        </li>
+        <li class="ev rv">
+          <span class="node" aria-hidden="true"></span>
+          <div class="ev-art" data-ill="aiburobhat" aria-hidden="true"><img src="../assets/images/aiburobhat.svg" alt="" loading="lazy" decoding="async"></div>
+          <div class="ev-body">
+            <p class="eyebrow">কুমারী জীবনের শেষ ভোজ</p>
+            <h3>আইবুড়োভাত</h3>
+            <p class="ev-when">শনিবার, ১২ ডিসেম্বর ২০২৬</p>
+            <p class="ev-where">কনের বাড়ি · বলরামডিহি, ঝাড়গ্রাম</p>
+            <a class="pill ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Balaramdihi+Jhargram+West+Bengal+721507">ম্যাপে দেখুন</a>
+          </div>
+        </li>
+        <li class="ev rv">
+          <span class="node" aria-hidden="true"></span>
+          <div class="ev-art" data-ill="haldi" aria-hidden="true"><img src="../assets/images/haldi.svg" alt="" loading="lazy" decoding="async"></div>
+          <div class="ev-body">
+            <p class="eyebrow">হলুদ ছোঁয়ার পর্ব</p>
+            <h3>গায়ে হলুদ</h3>
+            <p class="ev-when">রবিবার, ১৩ ডিসেম্বর ২০২৬ · দুপুর ১২টা</p>
+            <p class="ev-where">কনের বাড়ি · বলরামডিহি, ঝাড়গ্রাম</p>
+            <a class="pill ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Balaramdihi+Jhargram+West+Bengal+721507">ম্যাপে দেখুন</a>
+          </div>
+        </li>
+        <li class="ev rv">
+          <span class="node" aria-hidden="true"></span>
+          <div class="ev-art" data-ill="bibaho" aria-hidden="true"><img src="../assets/images/bibaho.svg" alt="" loading="lazy" decoding="async"></div>
+          <div class="ev-body">
+            <p class="eyebrow">শুভ লগ্নে</p>
+            <h3>শুভ বিবাহ</h3>
+            <p class="ev-when">রবিবার, ১৩ ডিসেম্বর ২০২৬ · রাত ১০টা থেকে</p>
+            <p class="ev-where">নিউ হোয়াইট হাউস, ঝাড়গ্রাম</p>
+            <a class="pill" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=New+White+House+Jhargram+West+Bengal+721507">ম্যাপে দেখুন</a>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="families">
+  <div class="med l" data-speed=".22" style="--top:8%" aria-hidden="true"><div data-ill="shubhoDrishti"><img src="../assets/images/shubho-drishti.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="med r" data-speed="-.22" style="--top:12%" aria-hidden="true"><div style="animation-delay:-2s" data-ill="saptapadi"><img src="../assets/images/saptapadi.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="bgimg br" data-speed=".12" aria-hidden="true" data-ill="shubhoDrishti"><img src="../assets/images/shubho-drishti.svg" alt="" loading="lazy" decoding="async"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" data-ill="orn" aria-hidden="true"><img src="../assets/images/ornament.svg" alt="" decoding="async"></div>
+      <p class="eyebrow">দুই পরিবার, এক বন্ধন</p>
+      <h2>আমাদের পরিবার</h2>
+      <p>যাঁদের আশীর্বাদে এই শুভ দিন।</p>
+    </div>
+    <div class="fam-grid">
+      <div class="arch rv">
+        <div class="arch-top" data-ill="marigoldFl" aria-hidden="true"><img src="../assets/images/marigold.svg" alt="" loading="lazy" decoding="async"></div>
+        <p class="eyebrow">কন্যাপক্ষ</p>
+        <h3>কনের পরিবার</h3>
+        <ul><li><b>নিরঞ্জন মাহাতা</b><span>পিতা</span></li><li><b>কল্যাণী মাহাতা</b><span>মাতা</span></li><li><b>অভিজিৎ মাহাতা</b><span>দাদা</span></li></ul>
+      </div>
+      <div class="couple rv">
+        <div class="art sd-art" id="sd-art" data-ill="sindoor" role="img" aria-label="বর কনের সিঁথিতে সিঁদুর পরাচ্ছেন, তার চিত্র"><img src="../assets/images/sindoor-daan.svg" alt="" loading="lazy" decoding="async"></div>
+      </div>
+      <div class="arch rv">
+        <div class="arch-top" data-ill="marigoldFl" aria-hidden="true"><img src="../assets/images/marigold.svg" alt="" loading="lazy" decoding="async"></div>
+        <p class="eyebrow">বরপক্ষ</p>
+        <h3>বরের পরিবার</h3>
+        <ul><li><b>মনোরঞ্জন মাহাতো</b><span>পিতা</span></li><li><b>গীতা রাণী মাহাতো</b><span>মাতা</span></li><li><b>মৃণাল কান্তি মাহাতো</b><span>ভাই</span></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="paar" aria-hidden="true"></div>
+<section class="band band-alt" id="venues">
+  <div class="med l" data-speed=".2" style="--top:10%" aria-hidden="true"><div data-ill="bibaho"><img src="../assets/images/bibaho.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="med r" data-speed="-.24" style="--top:16%" aria-hidden="true"><div style="animation-delay:-4s" data-ill="mehendi"><img src="../assets/images/mehendi-bn.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="bgimg bl" data-speed=".12" aria-hidden="true" data-ill="saptapadi"><img src="../assets/images/saptapadi.svg" alt="" loading="lazy" decoding="async"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="orn" data-ill="orn" aria-hidden="true"><img src="../assets/images/ornament.svg" alt="" decoding="async"></div>
+      <p class="eyebrow">ঠিকানা</p>
+      <h2>অনুষ্ঠানস্থল</h2>
+      <p>দুটি স্থানই ঝাড়গ্রামে, অল্প দূরত্বে।</p>
+    </div>
+    <div class="venues">
+      <article class="vcard rv">
+        <div class="vstamp" aria-hidden="true"><b>১০–১৩</b><span>ডিসেম্বর</span></div>
+        <p class="eyebrow">কনের বাড়ি</p>
+        <h3>বলরামডিহি</h3>
+        <p class="addr" id="addr1">বলরামডিহি, ঝাড়গ্রাম, পশ্চিমবঙ্গ ৭২১৫০৭</p>
+        <div class="chips"><span>মেহেন্দি</span><span>আইবুড়োভাত</span><span>গায়ে হলুদ</span></div>
+        <div class="btns"><a class="pill" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Balaramdihi+Jhargram+West+Bengal+721507">ম্যাপে দেখুন</a><button class="pill ghost" type="button" data-copy="addr1">ঠিকানা কপি করুন</button></div>
+      </article>
+      <article class="vcard rv">
+        <div class="vstamp" aria-hidden="true"><b>১৩</b><span>রাত ১০টা</span></div>
+        <p class="eyebrow">বিবাহ স্থল</p>
+        <h3>নিউ হোয়াইট হাউস</h3>
+        <p class="addr" id="addr2">নিউ হোয়াইট হাউস, ঝাড়গ্রাম, পশ্চিমবঙ্গ ৭২১৫০৭</p>
+        <div class="chips"><span>শুভ বিবাহ</span><span>সিঁদুরদান</span></div>
+        <div class="btns"><a class="pill" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=New+White+House+Jhargram+West+Bengal+721507">ম্যাপে দেখুন</a><button class="pill ghost" type="button" data-copy="addr2">ঠিকানা কপি করুন</button><a class="pill ghost" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Sathi%20%26%20Niladri%20%C2%B7%20Shubho%20Bibaho&amp;dates=20261213T163000Z/20261213T203000Z&amp;details=Wedding%20of%20Sathi%20Mahata%20and%20Niladri%20Mahato&amp;location=New%20White%20House%2C%20Jhargram%2C%20West%20Bengal%20721507">ক্যালেন্ডারে যোগ করুন</a></div>
+      </article>
+    </div>
+    <p class="vnote">ঝাড়গ্রাম জঙ্গলমহলের শালবনে ঘেরা, ডিসেম্বরের রাতে বেশ ঠান্ডা পড়ে। বিয়ের রাতে একটি শাল সঙ্গে রাখবেন।</p>
+  </div>
+</section>
+<div class="paar flip" aria-hidden="true"></div>
+
+<footer class="band finale">
+  <div class="med l" data-speed=".2" style="--top:22%" aria-hidden="true"><div data-ill="malaBadal"><img src="../assets/images/mala-badal.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="med r" data-speed="-.2" style="--top:30%" aria-hidden="true"><div style="animation-delay:-2s" data-ill="aiburobhat"><img src="../assets/images/aiburobhat.svg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="bgimg c" data-speed=".1" aria-hidden="true" data-ill="bibaho"><img src="../assets/images/bibaho.svg" alt="" loading="lazy" decoding="async"></div>
+  <div class="wrap">
+    <div class="orn" data-ill="orn" aria-hidden="true"><img src="../assets/images/ornament.svg" alt="" decoding="async"></div>
+    <p class="big rv">আপনাদের উপস্থিতি একান্ত কাম্য</p>
+    <p class="sub rv">আমাদের কন্যার বিবাহে আপনাকে ও আপনার পরিবারকে সাদর আমন্ত্রণ জানাই।</p>
+    <p class="from">সপ্রীতি শুভেচ্ছাসহ,<b>নিরঞ্জন মাহাতা ও কল্যাণী মাহাতা</b></p>
+    <div class="mono" aria-hidden="true"><b>স ন</b></div>
+    <p class="tiny">১৩ · ১২ · ২০২৬ · ঝাড়গ্রাম</p>
+    <a class="lang-link" href="../en/index.html">Read in English</a>
+  </div>
+</footer>
+
+<button class="shankha-btn" type="button" id="shankha" aria-label="শাঁখ ও উলুধ্বনি শুনুন">
+  <span class="ic" data-ill="conchFl" aria-hidden="true"><img src="../assets/images/conch.svg" alt="" decoding="async"></span>
+  <span class="lbl">শাঁখ বাজান</span>
+</button>
+
+<script src="../assets/js/lang-bn.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
